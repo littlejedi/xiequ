@@ -1,4 +1,4 @@
-package org.jedi.xiequ;
+package org.jedi.wow;
 
 import java.util.List;
 import com.google.common.base.Objects;
