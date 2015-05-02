@@ -241,7 +241,7 @@ public class Controller extends HttpServlet{
 				buffer.append("本次活动信息").append("\n");
 				buffer.append(Strings.nullToEmpty(raidInfo.getTime())).append("\n");
 				buffer.append(Strings.nullToEmpty(raidInfo.getDescription())).append("\n");
-				buffer.append("Raid指挥：").append(raidInfo.getRaidLeader()).append("\n");
+				//buffer.append("Raid指挥：").append(raidInfo.getRaidLeader()).append("\n");
 				buffer.append("参加本次活动伙伴").append("\n");
 				notGoingBuffer.append("\n").append("缺席本次活动伙伴").append("\n");
 				if (members != null) {
