@@ -219,7 +219,7 @@ public class WechatServiceBean implements WechatService {
 			/* 至此连接已完全建立，就可对当前数据库进行相应的操作了 */
 			/* 3. 接下来就可以使用其它标准mysql函数操作进行数据库操作 */
 			// 创建一个数据库表
-			rs = stmt.executeQuery("SELECT * FROM wow WHERE ID = 1");
+			rs = stmt.executeQuery("SELECT * FROM xiequ WHERE ID = 1");
 			rs.next();
 			final String raidInfoJSON = rs.getString("Data");
 			final RaidInfo raidInfo = OBJECT_MAPPER.readValue(raidInfoJSON, RaidInfo.class);
@@ -256,7 +256,7 @@ public class WechatServiceBean implements WechatService {
 			/* 至此连接已完全建立，就可对当前数据库进行相应的操作了 */
 			/* 3. 接下来就可以使用其它标准mysql函数操作进行数据库操作 */
 			// 创建一个数据库表
-			int count = stmt.executeUpdate("UPDATE wow SET Data = '" + raidInfoJSON + "' WHERE ID = 1");
+			int count = stmt.executeUpdate("UPDATE xiequ SET Data = '" + raidInfoJSON + "' WHERE ID = 1");
 		} catch (Exception e) {
 			throw e;
 		}

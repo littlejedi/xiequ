@@ -139,7 +139,7 @@ public class Controller extends HttpServlet{
 	  
 	  public static String getWelcomeMessage() {
 			StringBuffer buffer = new StringBuffer();
-			buffer.append("感谢你加入山口山集团 黑手是阻碍团队的第一大障碍！请回复数字选择服务：").append("\n");  
+			buffer.append("感谢你关注宜川茉莉！请回复数字选择服务：").append("\n");  
 			buffer.append("0. 查看自己的身份ID").append("\n\n");
 			buffer.append("1. 查看活动信息").append("\n");  
 			return buffer.toString();
@@ -148,7 +148,7 @@ public class Controller extends HttpServlet{
 		public String getMenuDescription() {
 			StringBuffer buffer = new StringBuffer();
 			Map<Integer, String> nMap = wechatService.getNicknameMap();
-			buffer.append("感谢你加入山口山集团 黑手是阻碍团队的第一大障碍！请回复数字选择服务：").append("\n");  
+			buffer.append("感谢你关注宜川茉莉加入我们的活动！请回复数字选择服务：").append("\n");  
 			buffer.append("团队成员的身份ID").append("\n\n");
 			for (Integer key: nMap.keySet()) {
 				String nickname = nMap.get(key);
@@ -171,7 +171,7 @@ public class Controller extends HttpServlet{
 			buffer.append("24. 戴总").append("\n");
 			buffer.append("25. Morpheus").append("\n\n");*/
 			buffer.append("\n");
-			buffer.append("如需报名活动，请根据上面输入对应自己名字的数字，例如：如果你是钱姐，即输入11").append("\n");
+			buffer.append("如需报名活动，请根据上面输入对应自己名字的数字，例如：如果你是谢区，即输入12").append("\n");
 			buffer.append("如果已经报名，需要退出，请输入2").append("\n").append("\n");
 			buffer.append("如需查看活动信息，请输入1").append("\n");
 			return buffer.toString();
@@ -265,7 +265,7 @@ public class Controller extends HttpServlet{
 					buffer.append(key).append(".  ").append(nickname).append("\n");
 				}
 				buffer.append("\n");
-				buffer.append("如需报名活动，请根据上面输入对应自己名字的数字，例如：如果你是钱姐，即输入11").append("\n");
+				buffer.append("如需报名活动，请根据上面输入对应自己名字的数字，例如：如果你是谢区，即输入12").append("\n");
 				buffer.append("如果已经报名，需要退出，请输入2").append("\n");
 				return buffer.toString();
 			} catch (Exception e) {
